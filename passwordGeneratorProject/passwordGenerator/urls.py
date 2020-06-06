@@ -19,7 +19,7 @@ from generator import views
 
 urlpatterns = [
     ##path('elie/', admin.site.urls),
-    path('', views.home), ## Home Page Path
-    path('password', views.password, name = 'password'), ## Elie page Path
-   
+    path('', views.home, name = 'home'), ##Home Page Path
+    path('password', views.password, name = 'password'), ##Password page Path
+    path('about',views.about, name = 'about') ##About page path
 ]
